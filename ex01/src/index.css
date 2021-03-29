@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background-color:white;
+    display: grid;
+    place-content: center;
+    
+    padding:25px;
+
+}
+.keyboard-wrapper{
+    width:750px;
+    height: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+
+}
+.keyboard-wrapper .display{
+    position: relative;
+    font-size: 18px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    border:2px solid rgb(116, 24, 24);
+    white-space: pre-wrap;
+}
+.keyboard-wrapper .key{
+    border:1px solid white;
+    margin-top: 20px;
+    text-transform: lowercase;
+    user-select: none;
+}
+.keyboard-wrapper .key .row{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    background:rgb(255, 255, 255);
+}
+.keyboard-wrapper .key .row button{
+    border:2px solid transparent;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius:5px;
+    transition: 0.3s;
+
+}
+
+.keyboard-wrapper .key .row button.space{
+width: 500px;
+}
+.keyboard-wrapper .key .row button.backspace{
+    width:100px;
+    height: 50px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+.keyboard-wrapper .key .row button.caps{
+    width: 100px;
+}
+.keyboard-wrapper .key .row button.shift{
+    width: 100px;
+}
+.keyboard-wrapper .key .row button.ok{
+    width: 100px;
+}
+.keyboard-wrapper .key .row button.active,
+.keyboard-wrapper .key .row button:hover{
+    border-color:rgb(207, 10, 10);
+    color:rgb(240, 200, 21);
+}
+.keyboard-wrapper .key .row button.active,
+.keyboard-wrapper .key .row button:active {
+    box-shadow: 
+    inset 3px 3px 3px #0002,
+    inset -3px -3px -3px #fff;
+}
+.keyboard-wrapper .key .row button.enter{
+    width:100px;
+}
+.keyboard-wrapper .key.uppercase {
+    text-transform: capitalize;
+}
+.naslov{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 0;
+    
+    
+}
